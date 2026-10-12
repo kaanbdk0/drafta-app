@@ -22,8 +22,8 @@
 <body><div class="wrap">
 
 <h1>DRAFTA — Privacy Policy</h1>
-<div class="upd">Last updated: 24 September 2026</div>
-<div class="apps">Applies to: DRAFTA: Clubs · DRAFTA: World Legends · DRAFTA: Football Quiz</div>
+<div class="upd">Last updated: 12 October 2026</div>
+<div class="apps">Applies to: DRAFTA: Clubs · DRAFTA: World Legends · DRAFTA: Football Quiz — on iOS (App Store) and Android (Google Play)</div>
 <div class="lang"><a href="#tr">Türkçe için tıklayın ↓</a></div>
 
 <p>These games are made by an independent developer, Kaan Budak. You do not need an account to
@@ -37,21 +37,21 @@ data the apps do handle, who else sees it, and what you can decide about it.</p>
 <tr><td>Your game progress: squads, scores, coins, records, settings, language</td>
     <td>So the game remembers where you were</td>
     <td>Stored on your device only. Deleting the app deletes it.</td></tr>
-<tr><td>A random identifier the app creates for itself (a UUID)</td>
+<tr><td>An install identifier the app creates for itself (a UUID)</td>
     <td>Tells one install apart from another, so daily limits, rewards and invite codes work</td>
-    <td>Sent to our own backend (Supabase). It is not your Apple ID, not the advertising identifier and not a hardware serial number. Deleting the app ends it; reinstalling creates a new one.</td></tr>
+    <td>Sent to our own backend (Supabase). It is not your Apple ID or Google account, not the advertising identifier and not a hardware serial number. <b>On iOS</b> it is random: deleting the app ends it and reinstalling creates a new one. <b>On Android</b> it is derived from the Android ID that the system gives to this one app on this device, so it is different in every app, cannot be used to follow you between apps, and stays the same if you reinstall; a factory reset changes it.</td></tr>
 <tr><td>Anonymous product events, for example "a squad was completed" or "a tournament was simulated", with the app version</td>
     <td>To see which parts of the game people reach and where they get stuck</td>
-    <td>Our own backend. No content you typed, no contacts, no location.</td></tr>
-<tr><td>Invite codes (DRAFTA: Football Quiz)</td>
+    <td>Our own backend. No content you typed, no contacts, no location. On Android the same events are also sent to Google Analytics for Firebase — see "Analytics on Android" below.</td></tr>
+<tr><td>Invite codes</td>
     <td>To credit the reward when a friend uses your code</td>
-    <td>Our own backend, tied to the random identifier above.</td></tr>
+    <td>Our own backend, tied to the install identifier above.</td></tr>
 <tr><td>Advertising data, handled by Google</td>
     <td>To show ads, which is how the free version is paid for</td>
     <td>See the next section.</td></tr>
 <tr><td>Purchases</td>
     <td>To unlock what you bought</td>
-    <td>Handled entirely by Apple. We are told that a purchase happened; we never see your card or billing details.</td></tr>
+    <td>Handled entirely by Apple (iOS) or Google Play (Android). We are told that a purchase happened; we never see your card or billing details.</td></tr>
 </table>
 
 <h2>Advertising</h2>
@@ -71,24 +71,45 @@ may be used for personalised advertising. You can say no, and the game works exa
 websites. Declining is fine and changes nothing about how the game plays. You can change it later
 in iOS Settings → Privacy &amp; Security → Tracking.</p>
 
+<h3>If you are on Android</h3>
+<p>Android has no separate tracking prompt. You can reset or delete your advertising ID at any time
+in Android Settings → Privacy → Ads (on some phones: Settings → Google → Ads). Deleting it means
+ads are no longer personalised from that ID.</p>
+
 <h3>Paying to remove ads</h3>
 <p>Where the app offers a purchase that removes ads, buying it stops the ad SDK from requesting ads.</p>
 
+<h2>Analytics on Android</h2>
+<p>The Android versions also use <b>Google Analytics for Firebase</b>. It receives the same anonymous
+product events described in the table (for example "a squad was completed"), together with an app
+instance identifier that Firebase creates, the app version, and general device information such as
+model, system version, language and country. It does not receive your name, e-mail, contacts or
+precise location. The iOS versions do not use Firebase.</p>
+<p>Analytics collection is switched off when the app starts and is only switched on once your
+consent answer is known: in the EEA, the UK and Switzerland it stays off unless you accept in the
+consent form, and you can withdraw that at any time from <b>Ad privacy options</b> in the app's
+settings. How Google handles this data is described in
+<a href="https://firebase.google.com/support/privacy">Firebase's privacy information</a>.</p>
+
 <h2>Notifications</h2>
 <p>The apps can send reminders, for example when your energy has refilled. They are scheduled on
-your device, iOS asks for your permission first, and you can switch them off in iOS Settings.</p>
+your device, the system (iOS or Android) asks for your permission first, and you can switch them
+off in your device's Settings.</p>
 
 <h2>Who else receives data</h2>
 <ul>
   <li><b>Google AdMob</b> — advertising, as described above.</li>
+  <li><b>Google Analytics for Firebase</b> — anonymous usage analytics, Android versions only.</li>
   <li><b>Supabase</b> — the hosting provider for our backend.</li>
-  <li><b>Apple</b> — app distribution and purchases.</li>
+  <li><b>Apple</b> — app distribution and purchases on iOS.</li>
+  <li><b>Google Play</b> — app distribution and purchases on Android.</li>
 </ul>
 <p>We do not sell your data, and we do not share it with anyone else.</p>
 
 <h2>How long it is kept</h2>
 <p>Progress stays on your device until you delete the app. Events and invite records on our
-backend are kept for up to 24 months and then deleted.</p>
+backend are kept for up to 24 months and then deleted. Analytics data held by Google Analytics for
+Firebase is kept for up to 14 months.</p>
 
 <h2>Children</h2>
 <p>These games are not directed at children under 13, and we do not knowingly collect data from
@@ -97,7 +118,7 @@ them. If you believe a child has provided data, write to us and we will delete i
 <h2>Your rights</h2>
 <p>If you are in the EEA or the UK, you have the right to access, correct, delete or object to the
 processing of your personal data, and to withdraw consent. Because we hold no name or e-mail, we
-need the random identifier to find your records: in the app it appears at the bottom of the
+need the install identifier to find your records: in the app it appears at the bottom of the
 settings screen, and you can send it to us by e-mail. Write to
 <a href="mailto:kaanbudak0@gmail.com">kaanbudak0@gmail.com</a> and we will answer within 30 days.</p>
 
@@ -111,8 +132,8 @@ version appears here before the next app update ships.</p>
 <hr>
 
 <h1 id="tr">DRAFTA — Gizlilik Politikası</h1>
-<div class="upd">Son güncelleme: 24 Eylül 2026</div>
-<div class="apps">Kapsam: DRAFTA: Clubs · DRAFTA: World Legends · DRAFTA: Football Quiz</div>
+<div class="upd">Son güncelleme: 12 Ekim 2026</div>
+<div class="apps">Kapsam: DRAFTA: Clubs · DRAFTA: World Legends · DRAFTA: Football Quiz — iOS (App Store) ve Android (Google Play)</div>
 
 <p>Bu oyunlar bağımsız bir geliştirici olan Kaan Budak tarafından yapılmaktadır. Oynamak için hesap
 açmanız gerekmez; adınızı, e-posta adresinizi veya telefon numaranızı istemiyoruz. Bu sayfa,
@@ -126,21 +147,21 @@ verebileceğinizi anlatır.</p>
 <tr><td>Oyun ilerlemeniz: kadrolar, skorlar, jetonlar, rekorlar, ayarlar, dil</td>
     <td>Oyunun kaldığınız yeri hatırlaması için</td>
     <td>Yalnızca cihazınızda durur. Uygulamayı silmek bu veriyi de siler.</td></tr>
-<tr><td>Uygulamanın kendisi için ürettiği rastgele bir kimlik (UUID)</td>
+<tr><td>Uygulamanın kendisi için ürettiği bir kurulum kimliği (UUID)</td>
     <td>Bir kurulumu diğerinden ayırmak için: günlük haklar, ödüller ve davet kodları bununla çalışır</td>
-    <td>Kendi arka ucumuza (Supabase) gider. Apple kimliğiniz değildir, reklam kimliğiniz değildir, cihaz seri numarası değildir. Uygulamayı silince biter; yeniden kurulumda yenisi üretilir.</td></tr>
+    <td>Kendi arka ucumuza (Supabase) gider. Apple kimliğiniz veya Google hesabınız değildir, reklam kimliğiniz değildir, cihaz seri numarası değildir. <b>iOS'ta</b> rastgeledir: uygulamayı silince biter, yeniden kurulumda yenisi üretilir. <b>Android'de</b> sistemin bu cihazda yalnızca bu uygulamaya verdiği Android kimliğinden türetilir; bu yüzden her uygulamada farklıdır, sizi uygulamalar arasında izlemek için kullanılamaz ve yeniden kurulumda aynı kalır; cihazı fabrika ayarlarına döndürmek onu değiştirir.</td></tr>
 <tr><td>Anonim ürün olayları: örneğin "kadro tamamlandı", "turnuva simüle edildi", uygulama sürümüyle birlikte</td>
     <td>Oyunun hangi bölümlerine ulaşıldığını ve nerede takılındığını görmek için</td>
-    <td>Kendi arka ucumuz. Yazdığınız hiçbir içerik, rehberiniz veya konumunuz gönderilmez.</td></tr>
-<tr><td>Davet kodları (DRAFTA: Football Quiz)</td>
+    <td>Kendi arka ucumuz. Yazdığınız hiçbir içerik, rehberiniz veya konumunuz gönderilmez. Android'de aynı olaylar Google Analytics for Firebase'e de gönderilir — aşağıdaki "Android'de analiz" bölümüne bakın.</td></tr>
+<tr><td>Davet kodları</td>
     <td>Bir arkadaşınız kodunuzu kullandığında ödülü hesaplamak için</td>
-    <td>Kendi arka ucumuz; yukarıdaki rastgele kimliğe bağlı olarak.</td></tr>
+    <td>Kendi arka ucumuz; yukarıdaki kurulum kimliğine bağlı olarak.</td></tr>
 <tr><td>Reklam verileri — Google tarafından işlenir</td>
     <td>Reklam göstermek için; ücretsiz sürümün masrafı böyle karşılanıyor</td>
     <td>Bir sonraki bölüme bakın.</td></tr>
 <tr><td>Satın almalar</td>
     <td>Aldığınız şeyi açmak için</td>
-    <td>Tamamen Apple tarafından yürütülür. Bize yalnızca satın almanın gerçekleştiği bildirilir; kart veya fatura bilgilerinizi hiç görmeyiz.</td></tr>
+    <td>Tamamen Apple (iOS) veya Google Play (Android) tarafından yürütülür. Bize yalnızca satın almanın gerçekleştiği bildirilir; kart veya fatura bilgilerinizi hiç görmeyiz.</td></tr>
 </table>
 
 <h2>Reklamlar</h2>
@@ -162,25 +183,47 @@ değiştirebilirsiniz.</p>
 edemeyeceğini ayrıca sorar. Reddetmeniz sorun değildir ve oyunun işleyişinde hiçbir şeyi
 değiştirmez. Sonradan iOS Ayarlar → Gizlilik ve Güvenlik → İzleme bölümünden değiştirebilirsiniz.</p>
 
+<h3>Android kullanıyorsanız</h3>
+<p>Android'de ayrı bir izleme sorusu yoktur. Reklam kimliğinizi istediğiniz zaman Android Ayarlar →
+Gizlilik → Reklamlar bölümünden (bazı telefonlarda: Ayarlar → Google → Reklamlar) sıfırlayabilir
+veya silebilirsiniz. Silerseniz reklamlar artık o kimlikle kişiselleştirilmez.</p>
+
 <h3>Reklamları kaldırmak için ödeme</h3>
 <p>Uygulama reklamları kaldıran bir satın alma sunuyorsa, bunu aldığınızda reklam SDK'sı artık
 reklam istemez.</p>
 
+<h2>Android'de analiz</h2>
+<p>Android sürümleri ayrıca <b>Google Analytics for Firebase</b> kullanır. Tabloda anlatılan anonim
+ürün olaylarının aynısını (örneğin "kadro tamamlandı"), Firebase'in ürettiği bir uygulama örneği
+kimliğini, uygulama sürümünü ve model, sistem sürümü, dil ve ülke gibi genel cihaz bilgilerini
+alır. Adınızı, e-postanızı, rehberinizi veya kesin konumunuzu almaz. iOS sürümleri Firebase
+kullanmaz.</p>
+<p>Analiz toplama, uygulama açıldığında kapalıdır ve yalnızca rıza cevabınız belli olduktan sonra
+açılır: AEA, Birleşik Krallık ve İsviçre'de rıza formunda kabul etmediğiniz sürece kapalı kalır ve
+bunu istediğiniz zaman uygulamanın ayarlarındaki <b>Reklam gizlilik seçenekleri</b>'nden geri
+alabilirsiniz. Google'ın bu veriyi nasıl işlediği
+<a href="https://firebase.google.com/support/privacy">Firebase'in gizlilik bilgilerinde</a>
+açıklanmıştır.</p>
+
 <h2>Bildirimler</h2>
 <p>Uygulamalar hatırlatma gönderebilir; örneğin enerjiniz dolduğunda. Bunlar cihazınızda planlanır,
-iOS önce sizden izin ister ve iOS Ayarlar'dan kapatabilirsiniz.</p>
+sistem (iOS veya Android) önce sizden izin ister ve cihazınızın Ayarlar bölümünden
+kapatabilirsiniz.</p>
 
 <h2>Veriyi başka kim alıyor</h2>
 <ul>
   <li><b>Google AdMob</b> — yukarıda anlatıldığı gibi reklamcılık.</li>
+  <li><b>Google Analytics for Firebase</b> — anonim kullanım analizi, yalnızca Android sürümlerinde.</li>
   <li><b>Supabase</b> — arka ucumuzun barındırma sağlayıcısı.</li>
-  <li><b>Apple</b> — uygulama dağıtımı ve satın almalar.</li>
+  <li><b>Apple</b> — iOS'ta uygulama dağıtımı ve satın almalar.</li>
+  <li><b>Google Play</b> — Android'de uygulama dağıtımı ve satın almalar.</li>
 </ul>
 <p>Verinizi satmıyoruz ve başka kimseyle paylaşmıyoruz.</p>
 
 <h2>Ne kadar saklanıyor</h2>
 <p>İlerlemeniz, uygulamayı silene kadar cihazınızda kalır. Arka ucumuzdaki olay ve davet kayıtları
-en fazla 24 ay tutulur, sonra silinir.</p>
+en fazla 24 ay tutulur, sonra silinir. Google Analytics for Firebase'de tutulan analiz verisi en
+fazla 14 ay saklanır.</p>
 
 <h2>Çocuklar</h2>
 <p>Bu oyunlar 13 yaşın altındaki çocuklara yönelik değildir ve onlardan bilerek veri toplamayız. Bir
@@ -189,7 +232,7 @@ en fazla 24 ay tutulur, sonra silinir.</p>
 <h2>Haklarınız</h2>
 <p>AEA veya Birleşik Krallık'taysanız kişisel verilerinize erişme, düzeltme, silme, işlenmesine
 itiraz etme ve rızanızı geri çekme hakkınız vardır. Elimizde adınız veya e-postanız olmadığı için
-kayıtlarınızı bulmamız gereken şey o rastgele kimliktir: uygulamada ayarlar ekranının altında
+kayıtlarınızı bulmamız gereken şey o kurulum kimliğidir: uygulamada ayarlar ekranının altında
 görünür, bize e-postayla gönderebilirsiniz.
 <a href="mailto:kaanbudak0@gmail.com">kaanbudak0@gmail.com</a> adresine yazın, 30 gün içinde
 yanıtlarız.</p>
